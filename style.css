@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: aliceblue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li{
+    margin: 0 10px;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+
+.content{
+    
+}
