@@ -3,12 +3,13 @@
 /* ===== HEADER & SLIDER ===== */
 
 .header{
-    height: 400px;
+    height: 50vh;
+    min-height: 300px;
     width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px;
+    padding: 3%;
     position: relative;
     background-image: url('./images/sfondo.jpg');
     background-size: cover;
@@ -44,6 +45,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .header img {
@@ -52,6 +54,7 @@
     z-index: 3;
     position: relative;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 .slider-container{
@@ -115,6 +118,7 @@
     padding: 0;
     display: flex;
     gap: 20px;
+    flex-direction: row;
 }
 
 .menu ul li{
@@ -147,12 +151,83 @@ body{
     position: relative;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.contenuto{
+.content{
     padding: 20px;
     position: relative;
     z-index: 3;
+    flex: 1;
+}
+
+.content h2{
+    margin-bottom: 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 50px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 350px;
+    margin: 20px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(44, 108, 176, 0.4);
+}
+
+.card-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-title{
+    color: #2D3047;
+    margin-bottom: 10px;
+}
+
+.card-price{
+    font-size: 1.5rem;
+    color: #3e945a;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background: #2D3047;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* ===== ANIMATIONS ===== */
