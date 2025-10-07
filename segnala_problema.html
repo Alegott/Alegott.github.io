@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segnala un prolema</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segnala un problema</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
-    <div class="header">
-        <img src="./images/icona.png"/>
+
+    <div class="slider-container">
+        <div class="slider-image"></div>
+        <div class="slider-image"></div>
+        <div class="slider-image"></div>
+        <div class="slider-image"></div>
+        <div class="slider-image"></div>
     </div>
-    
-    <div class="content">
-        <div class="card">
-            <img src="./images/parigi.jpg" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Due notti a Parigi</h3>
-                <p class="card-price">€ 374</p>
-            </div>
-        </div>
-    </div>
+
+  <div class="report-container">
+    <h1>Segnala un problema</h1>
+    <form>
+      <label>
+        <input type="radio" name="problema">
+        Errore di contenuto
+      </label>
+      <label>
+        <input type="radio" name="problema">
+        Link non funzionante
+      </label>
+      <label>
+        <input type="radio" name="problema">
+        Problema di accessibilità
+      </label>
+      <label>
+        <input type="radio" name="problema">
+        Altro
+      </label>
+
+      <textarea placeholder="Descrivi il problema (opzionale)"></textarea>
+
+      <div class="button">Invia (solo grafica)</div>
+
+    </form>
+  </div>
+
 </body>
 </html>
