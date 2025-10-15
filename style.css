@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* ===== HEADER & SLIDER ===== */
+/* HEADER & SLIDER */
 
 .header{
     height: 50vh;
@@ -101,7 +101,7 @@
     animation-delay: 20s;
 }
 
-/* ===== NAVIGATION ===== */
+/* NAVIGATION */
 
 .menu{
     display: flex;
@@ -139,7 +139,7 @@
     box-shadow: 0 8px 25px rgba(44, 108, 176, 0.4);
 }
 
-/* ===== CONTENT ===== */
+/* CONTENT */
 
 body{
     margin: 0;
@@ -235,11 +235,15 @@ body{
 
 .card-content{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-title{
     color: #2D3047;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .card-price{
@@ -249,24 +253,101 @@ body{
     margin: 10px 0;
 }
 
-/* ===== FOOTER ===== */
+.card-activities {
+    margin: 15px 0;
+    flex-grow: 1;
+}
+.card-activities h4 {
+    color: #2D3047;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
-.footer{
+.activities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activities-list li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.activities-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3e945a;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
     background: #2D3047;
     color: white;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: auto;
 }
 
-.footer-content{
-    max-width: 1200px;
+.footer-content {
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* ===== SEGNALA UN PROBLEMA ===== */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section h4 {
+    color: #3e945a;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.business-hours {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.business-hours p {
+    margin: 5px 0;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+}
+
+/* SEGNALA UN PROBLEMA */
 
 .report-container {
     background-color: #fff;
@@ -328,7 +409,7 @@ body{
     font-size: 1em;
   }
 
-/* ===== ANIMATIONS ===== */
+/* ANIMATIONS */
 
 @keyframes slideShow {
     0% { opacity: 0; }
