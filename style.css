@@ -418,3 +418,147 @@ body{
     40% { opacity: 0; }
     100% { opacity: 0; }
 }
+
+/* responsive per mobile */
+
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+      height: 35vh;
+      min-height: 200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 20px;
+      gap: 15px;
+    }
+    
+    .header img {
+      height: 60px;
+      width: 60px;
+      order: 1;
+    }
+    
+    .header a {
+      order: 2;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    
+    .header h1 {
+      position: relative;
+      order: 3;
+      margin-top: 20px;
+      font-size: clamp(1.2rem, 5vw, 2rem);
+    }
+    
+    /* Menu di navigazione */
+    .menu {
+      padding: 8px 0;
+    }
+    
+    .menu ul {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+    
+    .menu ul li {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .menu ul li a {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+    
+    /* Content */
+    .content {
+      padding: 15px;
+    }
+    
+    .content h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    
+    .cards-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      padding: 30px 2%;
+    }
+    
+    .card {
+      margin: 0;
+    }
+    
+    /* Tabella voli */
+    .tabella {
+      overflow-x: auto;
+      margin: 0 -15px;
+      padding: 0 15px;
+    }
+    
+    .tabella-voli {
+      min-width: 600px; /* Forza lo scroll orizzontale su schermi piccoli */
+    }
+    
+    .tabella-voli th,
+    .tabella-voli td {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: 25px 15px;
+    }
+    
+    .contact-info,
+    .business-hours {
+      font-size: 0.9rem;
+    }
+    
+    /* Segnala problema */
+    .report-container {
+      margin: 10% auto;
+      padding: 1.5em;
+      width: 90%;
+    }
+  }
+
+  /* Miglioramento della tabella per mobile */
+@media (max-width: 768px) {
+    .tabella h2 {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Miglioramento del form "Segnala problema" per mobile */
+  @media (max-width: 768px) {
+    .report-container h1 {
+      font-size: 1.3rem;
+    }
+    
+    form {
+      gap: 0.8em;
+    }
+    
+    label {
+      font-size: 0.95rem;
+    }
+    
+    textarea {
+      font-size: 0.95rem;
+    }
+    
+    .button {
+      padding: 0.6em;
+      font-size: 0.95rem;
+    }
+  }
